@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dina Seid - Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f1f5fb;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            width: 355px;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Profile circle */
+        .profile-circle {
+            width: 92px;
+            height: 92px;
+            margin: 0 auto 16px;
+
+            background: #2864e8;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* Name */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #111;
+        }
+
+        /* Job title */
+        .job-title {
+            color: #2864e8;
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        /* Description */
+        .description {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 24px;
+        }
+
+        /* Contact information */
+        .contact-info {
+            text-align: left;
+            margin-bottom: 22px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            color: #555;
+            font-size: 16px;
+
+            margin-bottom: 12px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 20px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* Button */
+        .contact-button {
+            width: 100%;
+            padding: 13px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #2864e8;
+            color: white;
+
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background: #1e55d0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <!-- Profile -->
+        <div class="profile-circle">
+            DS
+        </div>
+
+        <!-- Name -->
+        <h1>Dina Seid</h1>
+
+        <!-- Job -->
+        <div class="job-title">
+            Full Stack Developer
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+            I build modern and responsive web
+            applications using creative and clean
+            designs.
+        </p>
+
+        <!-- Contact information -->
+        <div class="contact-info">
+
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <span>dina@example.com</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span>+251 900 000 000</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">💻</span>
+                <span>github.com/dina</span>
+            </div>
+
+        </div>
+
+        <!-- Button -->
+        <button class="contact-button">
+            Contact Me
+        </button>
+
+    </div>
+
+</body>
+</html>
